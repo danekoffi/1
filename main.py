@@ -14,16 +14,16 @@ def main():
     n = int(input())
     game_classes = get_gameclass(n)
     print(game_classes)
+    choice_class(game_class)
+main()
 
-
-name=input("Введите имя вашего персонажа:")
-count_klass="1 - Маг , 2 - Воин , 3 - Паладин , 4 - Злодей"
-print(count_klass)
-klass=input("Выберите и введите класс персонажа(напишите НАЗВАНИЕ класса):")
-count_armanent="1 - Посох Веры , 2 - Палочка справедливости , 3 - Средневековый меч"
-print(count_armanent)
-armanent=input("Выберите и введите название стартового оружия(напишите НАЗВАНИЕ оружия):")
-
-print("Добро пожаловать в игру , {} ".format(name))
-print()
-
+def choice_class(game_class : dict):
+    print("Доступны классы:")
+    for i in game_class:
+        print(i)
+    print("Укажите название класса:")
+    c = input()
+    for c in game_class:
+        print("Вы выбрали - {}".format(c))
+def choice_weapon():
+    print("Вам доступно оружие:")
