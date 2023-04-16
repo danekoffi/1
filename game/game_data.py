@@ -2,10 +2,8 @@ import json
 import os
 
 def save_data_class(dict_class : dict):
-    try:
+    if os.path.exists("game_class.json"):
         os.remove("game_class.json")
-    except FileNotFoundError:
-        print("Нет файла.")
     with open("game_class.json","w") as f:
         json.dump(dict_class,f)
 def get_game_class(file_name : str):
@@ -20,3 +18,4 @@ def get_game_class(file_name : str):
         dict_class[i[0]] = tuple(i[1:])
     print(dict_class)
     save_data_class()
+get_game_class()
