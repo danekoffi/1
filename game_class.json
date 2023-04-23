@@ -1,5 +1,17 @@
-[ Magician:
-  "Magic Wand",
-  "The Staff of The Moon"]
+{
+  "Magician" : [
+    "magic wand",
+    "the staff of the moon"
+  ],
+  "Warrior" : [
+    "sword",
+    "medieval sword"
+  ],
+  "assassin" : [
+    "knife",
+    "assassins sword"
+  ]
 
+
+}
 

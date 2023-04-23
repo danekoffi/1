@@ -18,4 +18,3 @@ def get_game_class(file_name : str):
         dict_class[i[0]] = tuple(i[1:])
     print(dict_class)
     save_data_class()
-get_game_class()
